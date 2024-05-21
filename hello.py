@@ -1,7 +1,4 @@
 
-{% block content %}
-
-
     from flask import Flask, render_template
 
     #create a flask instance
@@ -35,4 +32,3 @@
     @app.errorhandler(500)
     def page_not_found(e):
         return render_template("500.html"), 500
-{% endblock %}
